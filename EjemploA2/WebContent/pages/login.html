@@ -1,0 +1,36 @@
+<div align="center">
+	<br />
+	<h1>Inicio de Sesi&oacute;n</h1>
+	<br />
+	<form name="loginForm" role="form">
+		<table width="50%">
+			<tr>
+				<td>
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">Usuario (E-Mail)</div>
+							<input class="form-control" type="email"
+								placeholder="Correo Electr&oacute;nico" required="required"
+								ng-model="userName" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">Contrase&ntilde;a</div>
+							<div>
+								<input type="password" class="form-control"
+									placeholder="**********" required="required"
+									ng-model="password" />
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div class="form-group">
+			<button type="submit" ng-click="login()" class="btn btn-primary">
+				<span class="glyphicon glyphicon-user"></span> Iniciar sesi&oacute;n
+			</button>
+		</div>
+	</form>
+</div>
